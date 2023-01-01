@@ -1,4 +1,4 @@
-
+// start
 // for loop
 {
   const chorus = "Let's dance!";
@@ -7,37 +7,67 @@
   }
   console.log("Until the sun comes up!");
 }
-
-
-// loopy lighthouse
-// fizz buzz varient
-{
-  for (let nums = 100; nums <= 200; nums++) {
-    if (nums % 3 === 0 && nums % 4 === 0) {
-      console.log('LoopyLighthouse');
-    } else if (nums % 3 === 0) {
-      console.log('Loopy');
-    } else if (nums % 4 === 0) {
-      console.log('Lighthouse');
-    } else {
-      console.log(nums);
-    };
-  };
-}
+// end
 
 
 
-// for. .in loop
-// adds each array item to 'total'
+// start
+// for in loops - iterate over arrays
+// similar to python for loops
 {
   const amounts = [61.00, 52.25, 112.99, 5.00];
 
+  // for loop
+  // adds each array item to 'total'
+  {
+    let total = 0;
+
+    for (let i = 0; i < amounts.length; i++) {
+      total += amounts[i];
+    }
+    console.log('Order total is: ', total);
+  }
+  // for...in loop
+  // adds each array item to 'total'
+  // similar to python for loop
   let total = 0;
-  for (let i = 0; i < amounts.length; i++) {
-    total += amounts[i];
+
+  for (let amount of amounts) {
+    total += amount;
   }
   console.log('Order total is: ', total);
 }
+// end
+
+
+
+
+// start
+
+
+// end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
